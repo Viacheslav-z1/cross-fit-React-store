@@ -1,0 +1,101 @@
+.header {
+
+  padding-top: 50px;
+
+  &__inner {
+    padding: 45px 0;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  &__likes-link{
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .5s;
+    display: inline-block;
+    &:hover {
+      background-color: #0000000d;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__logo-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &__logo-descr {
+    color: #9d9d9d;
+  }
+
+  &__info-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &-backet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+}
+
+
+
+
+@media(max-width:768px){
+  .header{
+    &__inner{
+      padding: 25px 0;
+    }
+
+    &__info-list{
+      gap: 10px;
+    }
+
+    &__likes-link{
+      padding: 5px;
+    }
+
+    &__price{
+      display: none;
+    }
+  }
+}
+
+@media(max-width:440px){
+  .header{
+    &__logo-descr{
+      display: none;
+    }
+    &__logo-name{
+      font-size: 18px;
+    }
+  }
+}
