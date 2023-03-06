@@ -1,6 +1,6 @@
 import "./header.scss";
 
-function Header() {
+export function Header() {
   return (
     <header className="header">
       <div className="container">
@@ -60,4 +60,4 @@ function Header() {
   );
 }
 
-export default Header;
+
